@@ -7,10 +7,12 @@
 import Header from "./components/Header.vue"
 import MainVisual from './components/MainVisual.vue'
 
+
 export default {
   components:{
     Header,
     MainVisual,
+
   }
 }
 </script>
