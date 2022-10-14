@@ -43,7 +43,6 @@ export default {
     }
 }
 
-
 </script>
 
 <style lang="scss">
@@ -153,14 +152,5 @@ export default {
         }
     }
 
-    @media (max-width: 991px){
-
-    }
-    @media (max-width: 767px){
-
-    }
-    @media (max-width: 575px){
-
-    }
 
 </style>
