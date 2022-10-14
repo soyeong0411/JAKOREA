@@ -5,20 +5,27 @@
             <div class="headerWrap">
                 <h1><a href="#"><img src="../assets/new_logo.svg" alt=""></a></h1>
                 <div class="menuWrap">
-                    <nav class="icon_menu">
-                        <ul>
-                            <li v-for="item in iconData" :key="item">
-                                <a href="#"><img :src="`./images/${item}`" alt=""></a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="top_menu">
+                        <nav class="icon_menu">
+                            <ul>
+                                <li v-for="item in iconData" :key="item">
+                                    <a href="#"><img :src="`./images/${item}`" alt=""></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="toggle">
+                            <div class="lineWrap">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
                     <nav class="main_menu">
                         <ul>
                             <li v-for="item in menuData" :key="item">
                                 <a href="#">{{item}}</a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav>  
                 </div>
             </div>
         </div>
@@ -35,6 +42,8 @@ export default {
         }
     }
 }
+
+
 </script>
 
 <style lang="scss">
@@ -47,37 +56,111 @@ export default {
         }
         .menuWrap{
             margin-left: auto;
-            .icon_menu{
-                ul{
-                    display: flex;
-                    height: 100%;
-                    img{
-                        width: 24px;
+            .top_menu{
+                display: flex;
+                justify-content: end;
+                gap:15px;
+                .icon_menu{
+                    ul{
+                        display: flex;
+                        height: 100%;
+                        gap:15px;
+                        img{
+                        width: 22px;
+                        }
                     }
                 }
-            }
-        .main_menu{
-            
-            ul{
-                display: flex;
-                height: 100%;
-                li{
-                    height: 100%; 
-                    a{
+                .toggle{
+                    display: none;
+                    cursor: pointer;
+                    .lineWrap{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 100%;
-                        padding: 0 40px;
-                        font-size: 19px;
-                        font-weight: bold;
+                        position: relative;
+                        width: 25px;height: 25px;
+                            .line{
+                            width: 20px;height: 1px;
+                            background: #000;  
+                            border-radius: 10px;
+                            &::before,&::after{
+                                content: "";display: block;
+                                width: 20px;height: 1px;
+                                background: #000;  
+                                border-radius: 10px;
+                                position: absolute;
+                                transform: translateY(-5px);
+                                }
+                                &::after{
+                                    transform: translateY(5px);
+                                }
+                            }
+                        }   
+                    } 
+                }
+            .main_menu{
+                ul{
+                    display: flex;
+                    height: 100%;
+                    gap:70px;
+                    li{
+                        height: 100%; 
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
         }
-        }
-        
     }
 
+    @media (max-width: 1199px){
+        .headerWrap{
+            padding: 15px 0;
+            img{
+                width: 170px;
+            }
+            .menuWrap{
+                display: flex;
+                align-items: center;
+                .top_menu{
+                    .icon_menu{
+                        li{
+                            display: flex;
+                            align-items: center;
+                            &:nth-child(1){
+                                display: none;
+                            }
+                            &:nth-child(2){
+                                display: none;
+                            }
+                        }
+                    }
+                    .toggle{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .main_menu{
+                    display: none;
+                }   
+            }    
+        }
+    }
+
+    @media (max-width: 991px){
+
+    }
+    @media (max-width: 767px){
+
+    }
+    @media (max-width: 575px){
+
+    }
 
 </style>
