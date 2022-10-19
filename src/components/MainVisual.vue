@@ -73,6 +73,7 @@
         background: #e1eff2;
         height: 745px;
         position: relative;
+        overflow: hidden;
         .slide{
             width: 100%;height: 745px;
             overflow: hidden;
@@ -114,7 +115,7 @@
                 }
                 .slideVideo{
                     position: absolute;
-                    right:-20px;top: 0;
+                    right:-70px;bottom: -30px;
                     width: 800px;height: 100%;
                     &.video1{
                         width: 900px;
@@ -163,7 +164,7 @@
                 }
             .slideVideo{
                 width: 600px !important;
-                top: 80px !important;
+                top: 120px !important;
                 &.video1{
                     width: 700px !important;
                     bottom: 20px !important;
@@ -192,10 +193,8 @@
             top: 230px;
         }
         .slideVideo{
-            right: -40px !important;
-            top: 100px !important;
             &.video1{
-                width: 600px !important;
+                width: 620px !important;
             }
         }
         .swiper-btn{

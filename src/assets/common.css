@@ -2,3 +2,6 @@
 body{
     font-family: 'NanumSquare', sans-serif !important ;
 }
+h1,.mainTitle,.tabMenu{
+    font-family: 'NanumSquareExtraBold';
+}
