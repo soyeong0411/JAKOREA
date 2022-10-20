@@ -1,25 +1,24 @@
 <template>
-  <swiper :modules="modules1" v-bind="swiperOptions1" class="mySwiper1">
-
-    <swiper-slide v-if="tab==1" v-for="item in notice" :key="item">
-        <h4>{{item.title}}</h4>
-        <p v-html="item.content"></p>
-    </swiper-slide>
-
-    <swiper-slide v-if="tab==2" v-for="item in story" :key="item">
-        <h4>{{item.title}}</h4>
-        <p v-html="item.subtitle"></p>
-    </swiper-slide>
-
-    <swiper-slide v-if="tab==3" v-for="item in news" :key="item">
-        <h4>{{item.title}}</h4>
-        <p v-html="item.content"></p>
-    </swiper-slide>
-    <div class="swiper-btn">
-        <div class="next"><img src="../assets/next.png" alt=""></div>
-        <div class="prev"><img src="../assets/prev.png" alt=""></div>
-    </div>
-  </swiper>  
+  <div class="swiperItem">
+      <swiper :modules="modules1" v-bind="swiperOptions1" class="mySwiper1">
+        <swiper-slide v-if="tab==1" v-for="item in notice" :key="item" class="slide">
+            <h4>{{item.title}}</h4>
+            <p v-html="item.content"></p>
+        </swiper-slide>
+        <swiper-slide v-if="tab==2" v-for="item in story" :key="item" class="slide">
+            <h4>{{item.title}}</h4>
+            <p v-html="item.subtitle"></p>
+        </swiper-slide>
+        <swiper-slide v-if="tab==3" v-for="item in news" :key="item" class="slide">
+            <h4>{{item.title}}</h4>
+            <p v-html="item.content"></p>
+        </swiper-slide>
+        <div class="swiper-btn">
+            <div class="next"><img src="../assets/next.png" alt=""></div>
+            <div class="prev"><img src="../assets/prev.png" alt=""></div>
+        </div>
+      </swiper>
+  </div>
     
 </template>
 
@@ -72,15 +71,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.mySwiper1{
+<style lang="scss" scoped>
+.swiperItem{
+    position: relative;
+    .mySwiper1{
     height: 300px;
-    width: 100%;
-    swiper-slide{
-        p{
-            text-overflow: ellipsis;
-        height: 200px;
-        }
+    width: 1100px;
+    padding: 30px 0;
+
+    .slide{
+        
         
     }
     .swiper-btn{
@@ -103,5 +103,7 @@ export default {
         }
     }
 }
+}
+
 
 </style>
