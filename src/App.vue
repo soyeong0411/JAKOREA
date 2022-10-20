@@ -3,6 +3,7 @@
   <main-visual></main-visual>
   <IconBanner></IconBanner>
   <SlideBanner></SlideBanner>
+  <NumberCount></NumberCount>
   <TabSwiper :notice="notice" :story="story" :news="news"></TabSwiper>
 </template>
 
@@ -12,10 +13,13 @@ import MainVisual from './components/MainVisual.vue'
 import IconBanner from './components/IconBanner.vue'
 import SlideBanner from "./components/slideBanner.vue";
 import TabSwiper from "./components/TabSwiper.vue";
+import NumberCount from "./components/NumberCount.vue"
 
 import notice from "@/data/04notice.js"
 import story from "@/data/05story.js"
 import news from "@/data/06news.js"
+
+
 
 
 export default {
@@ -25,7 +29,8 @@ export default {
     IconBanner,
     SlideBanner,
     TabSwiper,
-  },
+    NumberCount,
+},
   data(){
     return {
       notice:notice,

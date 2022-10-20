@@ -4,7 +4,6 @@
     <swiper-slide v-if="tab==1" v-for="item in notice" :key="item">
         <h4>{{item.title}}</h4>
         <p v-html="item.content"></p>
-
     </swiper-slide>
 
     <swiper-slide v-if="tab==2" v-for="item in story" :key="item">
@@ -16,12 +15,12 @@
         <h4>{{item.title}}</h4>
         <p v-html="item.content"></p>
     </swiper-slide>
-
-  </swiper>  
     <div class="swiper-btn">
         <div class="next"><img src="../assets/next.png" alt=""></div>
         <div class="prev"><img src="../assets/prev.png" alt=""></div>
     </div>
+  </swiper>  
+    
 </template>
 
 <script>
@@ -76,6 +75,33 @@ export default {
 <style lang="scss">
 .mySwiper1{
     height: 300px;
+    width: 100%;
+    swiper-slide{
+        p{
+            text-overflow: ellipsis;
+        height: 200px;
+        }
+        
+    }
+    .swiper-btn{
+        cursor: pointer;
+        .prev{
+            position: absolute;
+            left: 20px;top: 50%;
+            z-index: 1;
+            img{
+                width: 14px;
+            }
+        }
+        .next{
+            position: absolute;
+            right: 20px;top: 50%;
+            z-index: 1;
+            img{
+                width: 14px;
+            }
+        }
+    }
 }
 
 </style>

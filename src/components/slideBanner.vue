@@ -21,8 +21,8 @@
                         </div>
                     </swiper-slide>
                     <div class="swiper-btn">
-                        <div class="next"><img src="../assets/next.png" alt=""></div>
-                        <div class="prev"><img src="../assets/prev.png" alt=""></div>
+                        <div class="next"><img src="../assets/right.png" alt=""></div>
+                        <div class="prev"><img src="../assets/left.png" alt=""></div>
                     </div>
                 </swiper>
                 
@@ -77,11 +77,11 @@
   };
   </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slideBan{
     position: relative;
     width: 100%;
-    padding: 100px 0;
+    padding: 20px 0 80px 0;
     h1{
     font-size: 46px;
     }
@@ -152,7 +152,7 @@
             left: 20px;top: 50%;
             z-index: 1;
             img{
-                width: 14px;
+                width: 34px;
             }
         }
         .next{
@@ -160,95 +160,95 @@
             right: 20px;top: 50%;
             z-index: 1;
             img{
-                width: 14px;
+                width: 34px;
             }
         }
     }
 
 }
-@media (max-width: 1199px){
-    h1{
-    font-size: 40px !important;
-    }
-    .slideLeft{
-        left: 70px !important;
-        .mainTitle{
-                font-size:30px !important;
-                margin-bottom: 15px;
-            }
-            .subTitle{
-                font-size: 15px !important;
-            }
-    }
-    .slideImg{
-        &.img0{
-            width:300px !important;
-            top: 70px !important;
-        }
-        &.img1{
-            width:350px !important;
-            top: 70px !important;
-        }
-        &.img2{
-            width:280px !important;
-            right: 50px !important;
-        }
-        &.img3{
-            width:320px !important;
-            right: 50px !important;
-            top: 40px !important;
-        }
-    }
-}
-@media (max-width: 991px){
-    h1{
-    font-size:36px !important;
-    }
-    .slideLeft{
-        left: 30px !important;
-        .mainTitle{
-                font-size:30px !important;
-                margin-bottom: 15px;
-            }
-            .subTitle{
-                font-size: 14px !important;
-            }
-    }
-    .slideImg{
-        &.img0{
-            right: 50px !important;
-        }
-        &.img1{
-            right: 50px !important;
-            width:320px !important;
-        }
-        &.img2{
-            width:250px !important;
-            right: 50px !important;
-        }
-        &.img3{
-            width:250px !important;
-            right: 50px !important;
-            top: 40px !important;
-        }
-}
-}
-@media (max-width: 767px){
-    .slideLeft{
-        left: 30px !important;
-        top: 150px !important;
-        .mainTitle{
-                font-size:26px !important;
-                margin-bottom: 15px;
-            }
-    }
-    .slideBtn{
-        top: 150px !important;
-        }
-        .slideImg{
-            display: none;
-        }
-        }
+// @media (max-width: 1199px){
+//     h1{
+//     font-size: 40px !important;
+//     }
+//     .slideLeft{
+//         left: 70px !important;
+//         .mainTitle{
+//                 font-size:30px !important;
+//                 margin-bottom: 15px;
+//             }
+//             .subTitle{
+//                 font-size: 15px !important;
+//             }
+//     }
+//     .slideImg{
+//         &.img0{
+//             width:300px !important;
+//             top: 70px !important;
+//         }
+//         &.img1{
+//             width:350px !important;
+//             top: 70px !important;
+//         }
+//         &.img2{
+//             width:280px !important;
+//             right: 50px !important;
+//         }
+//         &.img3{
+//             width:320px !important;
+//             right: 50px !important;
+//             top: 40px !important;
+//         }
+//     }
+// }
+// @media (max-width: 991px){
+//     h1{
+//     font-size:36px !important;
+//     }
+//     .slideLeft{
+//         left: 30px !important;
+//         .mainTitle{
+//                 font-size:30px !important;
+//                 margin-bottom: 15px;
+//             }
+//             .subTitle{
+//                 font-size: 14px !important;
+//             }
+//     }
+//     .slideImg{
+//         &.img0{
+//             right: 50px !important;
+//         }
+//         &.img1{
+//             right: 50px !important;
+//             width:320px !important;
+//         }
+//         &.img2{
+//             width:250px !important;
+//             right: 50px !important;
+//         }
+//         &.img3{
+//             width:250px !important;
+//             right: 50px !important;
+//             top: 40px !important;
+//         }
+// }
+// }
+// @media (max-width: 767px){
+//     .slideLeft{
+//         left: 30px !important;
+//         top: 150px !important;
+//         .mainTitle{
+//                 font-size:26px !important;
+//                 margin-bottom: 15px;
+//             }
+//     }
+//     .slideBtn{
+//         top: 150px !important;
+//         }
+//         .slideImg{
+//             display: none;
+//         }
+//         }
 
 
        

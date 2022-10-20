@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container tabWrap">
         <div class="tabSwiper">
             <h1>기관소식</h1>
             <div class="tabMenu">
@@ -37,16 +37,24 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.tabSwiper{
+<style lang="scss" scoped>
+.tabWrap{
+    padding: 70px 0; 
+    .tabSwiper{
     display: flex;
     align-items: center;
-
     .tabMenu{
+        width: 300px;
         display: flex;
-        font-size: 20px;
+        justify-content: space-between;
+        font-size: 22px;
+        margin-left: 50px;
+
+
     }
 }
+}
+
 
 
 </style>
