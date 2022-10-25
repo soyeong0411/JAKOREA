@@ -1,6 +1,6 @@
 <template>
     <div class="container tabWrap">
-        <div class="tabSwiper">
+        <div class="tabSwiper" data-aos="fade-up" data-aos-duration="1500">
             <h1>기관소식</h1>
             <div class="tabMenu">
                 <div class="tab" @click="tab=1" :class="{active:tab==1}">공지사항</div>
@@ -14,7 +14,7 @@
         :story="story" 
         :news="news"
         :tab="tab"
-        ></TabSwiperItem>
+        data-aos="fade-up" data-aos-duration="2000"></TabSwiperItem>
 
     </div>
 </template>

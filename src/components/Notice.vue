@@ -1,7 +1,7 @@
 <template>
     <div class="container noticeWrap">
-        <NoticeCon :notice="notice"></NoticeCon>
-        <Announce :result="result"></Announce>
+        <NoticeCon :notice="notice"  data-aos="fade-up" data-aos-duration="1500"></NoticeCon>
+        <Announce :result="result"  data-aos="fade-up" data-aos-duration="2000"></Announce>
     </div>
 
 </template>
@@ -24,5 +24,7 @@ export default {
 <style>
 .noticeWrap{
     display: flex;
+    gap: 80px;
+    padding: 50px 0;
 }
 </style>

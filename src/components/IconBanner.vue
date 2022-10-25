@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <ul>
-                <li v-for="item in iconData" :key="item">
+                <li v-for="item in iconData" :key="item" data-aos="fade-up" data-aos-duration="2000" >
                     <a href="#"><img :src="`./images/02iconBanner/${item.src}`" alt=""></a>
                     <a href="#"><h5 v-html="item.title"></h5></a>
                     <a href="#"><p v-html="item.subtitle"></p></a>
@@ -24,6 +24,8 @@ export default {
         }
     },
 }
+
+AOS.init();
 </script>
 
 <style lang="scss" scoped>

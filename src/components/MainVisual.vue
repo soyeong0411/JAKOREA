@@ -1,11 +1,11 @@
 <template>
-    <div class="visual" id="visual">
+    <div class="visual" id="visual" >
         <div class="container">
             <div class="row">
                 <swiper :modules="modules" v-bind="swiperOptions" class="mySwiper px-0">
                     <swiper-slide v-for="(item,i) in swiperData" :key="item" class="slide">
                         <div class="slideCon">
-                            <div class="slideText">
+                            <div class="slideText" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="main_title" v-html="item.mainTitle"></div>
                                 <div class="sub_title" v-html="item.subtitle"></div>
                             </div>
@@ -28,6 +28,7 @@
   </template>
 
   <script>
+
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from "swiper/vue";
   
@@ -66,6 +67,8 @@
     };
     },
   };
+  AOS.init();
+  
   </script>
 
   <style lang="scss">

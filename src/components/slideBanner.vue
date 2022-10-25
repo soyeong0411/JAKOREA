@@ -1,5 +1,5 @@
 <template>
-  <div class="slideBan">
+  <div class="slideBan" data-aos="fade-up" data-aos-duration="1500">
         <div class="container">
             <h1>JA 교육 프로그램</h1>
             <div class="swiperWrap">
@@ -75,6 +75,8 @@
     };
     },
   };
+
+  AOS.init();
   </script>
 
 <style lang="scss" scoped>

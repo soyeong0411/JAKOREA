@@ -2,7 +2,7 @@
   <div class="resultCon">
     <h1>결과발표</h1>
     <div class="result" v-for="(item,i) in 4" :key="i">
-        <h4><a href="#">{{result[i].title}}</a></h4>
+        <h5><a href="#">{{result[i].title}}</a></h5>
         <p>{{result[i].date}}</p>
     </div>
   </div>
@@ -16,6 +16,31 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.resultCon{
+    h1{
 
+      &::after{
+        content: "";display: block;
+        border-bottom: 2px solid #000;
+        margin: 20px 0;
+      }
+    }
+    .result{
+      width: 550px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 20px 0;
+      h5{
+      font-weight: bold;
+      }
+      p{
+        font-size: 14px;
+        color:rgb(197, 197, 197);
+        margin-top: 25px;
+      }
+    }
+    
+ }
 </style>

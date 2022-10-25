@@ -1,9 +1,9 @@
 <template>
 <div class="jaVideo">
     <video src="../assets/main-home.mp4" autoplay muted loop></video>
-    <p class="title">우리 청소년들이 미래의 인재로 성장하도록</p>
-    <h1>JA KOREA가 함께합니다.</h1>
-    <div class="slideBtn">
+    <p class="title"  data-aos="fade-up" data-aos-duration="1500">우리 청소년들이 미래의 인재로 성장하도록</p>
+    <h1  data-aos="fade-up" data-aos-duration="2000">JA KOREA가 함께합니다.</h1>
+    <div class="slideBtn"  data-aos="fade-up" data-aos-duration="2500">
         <a href="#">자세히 보기 →</a>
     </div>
 </div>                

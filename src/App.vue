@@ -8,6 +8,8 @@
   <Notice :notice="noticeCon" :result="result"></Notice>
   <JaVideo></JaVideo>
   <Support :support="support"></Support>
+  <news-letter></news-letter>
+  <Footer></Footer>
 </template>
 
 <script>
@@ -20,6 +22,8 @@ import NumberCount from "./components/NumberCount.vue"
 import Notice from './components/Notice.vue'
 import JaVideo from "./components/JaVideo.vue";
 import Support from './components/Support.vue';
+import NewsLetter from './components/NewsLetter.vue';
+import Footer from './components/Footer.vue';
 
 import notice from "@/data/04notice.js"
 import story from "@/data/05story.js"
@@ -27,6 +31,7 @@ import news from "@/data/06news.js"
 import noticeCon from '@/data/07notice.js';
 import result from '@/data/08result.js';
 import support from '@/data/09support.js'
+
 
 
 
@@ -43,7 +48,9 @@ export default {
     NumberCount,
     Notice,
     JaVideo,
-    Support
+    Support,
+    NewsLetter,
+    Footer,
 },
   data(){
     return {
