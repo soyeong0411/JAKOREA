@@ -45,7 +45,7 @@ export default {
 <style lang="scss">
 .numberCount{
     background: rgb(40, 106, 148);
-    height: 500px;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     .numberWrap{
@@ -90,7 +90,20 @@ export default {
         }
     }
     }
+
+@media (max-width: 991px){
+    .numberWrap{
+        flex-direction: column;
     
+    }
+    .numLine{
+        width: 300px !important;
+    }
+    .graphTxt{
+        font-size: 12px !important;
+    }
+}
+
     
     
 }

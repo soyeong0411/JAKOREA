@@ -44,7 +44,7 @@ export default {
                     font-weight: 600;
                     border-radius: 50px;
                     position: absolute;
-                    bottom: 350px;left: 250px;
+                    bottom: 150px;left: 250px;
                     box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
                     a{
                         display: flex;
