@@ -51,20 +51,14 @@ export default {
         margin-left: 50px;
         cursor: pointer;
         position: relative;
-        // .tab{
-        //     &.active::after{
-        //         content:"";
-        //         position: absolute;
-        //         width: 100%;
-        //         height: 3px;
-        //         background: rgb(34, 111, 141);
-        //         left: 0;bottom: 0;
-        //     }
-        //     }
         }
 }
 }
-
+@media (max-width: 991px){
+   
+}
+@media (max-width: 767px){
+}
 
 
 </style>

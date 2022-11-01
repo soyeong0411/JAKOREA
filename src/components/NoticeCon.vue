@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss">
  .noticeCon{
+  padding: 0 30px;
     h1{
       &::after{
         content: "";display: block;
@@ -38,4 +39,14 @@ export default {
     }
     
  }
+ @media (max-width: 991px){
+  .notice{
+      h5{
+      font-size: 18px;
+      }
+    
+    }
+
+}
+
 </style>

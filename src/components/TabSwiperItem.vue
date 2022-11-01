@@ -13,11 +13,11 @@
             <h4>{{item.title}}</h4>
             <p v-html="item.content"></p>
         </swiper-slide>
-        <div class="swiper-btn">
+      </swiper>
+      <div class="swiper-btn">
             <div class="next"><img src="../assets/next.png" alt=""></div>
             <div class="prev"><img src="../assets/prev.png" alt=""></div>
         </div>
-      </swiper>
   </div>
     
 </template>
@@ -90,9 +90,20 @@ export default {
 
     .slide{
         
+        cursor: pointer;
+        h4{
+            font-size: 18px;
+        }
+        p{
+            overflow: hidden;
+        text-overflow: ellipsis;
+
+        }
         
     }
-    .swiper-btn{
+}
+}
+.swiper-btn{
         cursor: pointer;
         .prev{
             position: absolute;
@@ -111,8 +122,8 @@ export default {
             }
         }
     }
-}
-}
+
+    
 
 
 </style>

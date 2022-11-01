@@ -1,6 +1,6 @@
 <template>
 <div class="jaVideo">
-    <video src="../assets/main-home.mp4" autoplay muted loop></video>
+    <video src="../assets/main-home.mp4" autoplay muted loop class="bg_movie"></video>
     <p class="title"  data-aos="fade-up" data-aos-duration="1500">우리 청소년들이 미래의 인재로 성장하도록</p>
     <h1  data-aos="fade-up" data-aos-duration="2000">JA KOREA가 함께합니다.</h1>
     <div class="slideBtn"  data-aos="fade-up" data-aos-duration="2500">
@@ -15,13 +15,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .jaVideo{
         height: 100vh;
         width: 100%;
         overflow: hidden;
         position: relative;
-
+        .bg_movie{
+                object-fit: cover;
+                width: 100%;height: 100%;
+                position: absolute;
+                left: 0;top: 0;}
             
             .title{
                 font-size: 40px;
@@ -54,5 +58,17 @@ export default {
                     }
                 }
     }
+
+    @media (max-width: 991px){
+        .title{
+                font-size: 30px !important;
+            }
+            h1{
+                font-size: 74px;
+                position: absolute;
+                left: 250px;top:470px;
+                color:#fff;
+            }
+}   
 
 </style>

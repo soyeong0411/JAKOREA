@@ -27,4 +27,12 @@ export default {
     gap: 80px;
     padding: 50px 0;
 }
+
+@media (max-width: 991px){
+    .noticeWrap{
+    display: block;
+
+}
+}
+
 </style>

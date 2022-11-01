@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss">
 .resultCon{
+  padding: 0 30px;
     h1{
 
       &::after{
@@ -43,4 +44,12 @@ export default {
     }
     
  }
+
+ @media (max-width: 991px){
+    .result{
+      h5{
+        font-size: 18px;
+      }
+    }
+}
 </style>
